@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html data-ng-app = CustomersModule>
+    <head>
+        <title>Welcome To The INFO303 Store</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-resource.min.js"></script>
+        <script src="js/javascript.js"></script>
+        <link rel="stylesheet" type="text/css" href="css.css">
+    </head>
+    <body>
+        <div data-ng-controller="CustomersController as catCtrl">
+            <h1>Welcome To The INFO303 Store</h1>
+        <h2>Our Customers:</h2>  
+            <table>
+                <thead>
+                    <tr>
+                        <th>Customer ID: </th>
+                        <th>First Name: </th>
+                        <th>Last Name: </th>
+                        <th>Email Address: </th>
+                        <th>Group: </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-ng-repeat="customer in catCtrl.customers"> <!-- Way To Display Customer Details -->
+                        <td>{{customer.id}}</td>
+                        <td>{{customer.firstName}}</td>
+                        <td>{{customer.lastName}}</td>
+                        <td>{{customer.email}}</td>
+                        <td>{{customer.group}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        <br>
+        <h2>Create A Customer:</h2>
+        <fieldset>
+                    <form data-ng-submit="catCtrl.addCustomer(customer)"> <!-- Way To Post Customer Details To Customer Service -->
+                        <!-- <label>Customer ID: </label> -->
+                            <input type="text" placeholder="Customer ID:" data-ng-model="customer.id">
+                            <br>
+                        <!-- <label>First Name: </label> -->
+                            <input type="text" placeholder="First Name:" data-ng-model="customer.firstName">
+                            <br>
+                        <!-- <label>Last Name: </label> -->
+                            <input type="text" placeholder="Last Name:" data-ng-model="customer.lastName">
+                            <br>
+                        <!-- <label>Email Address: </label> -->
+                            <input type="text" placeholder="Email Address:" data-ng-model="customer.email">
+                            <br>
+                        <!-- <label>Group: </label> -->
+                            <input type="text" placeholder="Group:" data-ng-model="customer.group">
+                            <br>
+                            <br>
+                        <button>Create</button>
+                    </form>
+                </fieldset>
+        </div>
+    </body>
+</html>

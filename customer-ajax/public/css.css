@@ -1,0 +1,96 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16/05/2018, 10:18:48 AM
+    Author     : ReganWalsh
+*/
+
+fieldset {
+  font-size:16px;
+  padding:10px;
+  width:250px;
+  line-height:1.5;
+  background-color: #A9A9A9;
+  border-style: inset;
+  font-style: italic;
+  font-weight: bold;
+  border-width: thick;
+  border-color: #909090;
+  font-family: arial;
+}
+
+input {
+  float: left;
+  clear: both;
+  width: 99.3%;
+  border: none;
+  padding-top:3.5px;
+  background-color: white;
+  font-family: arial;
+  
+}
+
+button {
+    background-color: #696969;
+    border: none;
+    color: white;
+    padding: 3px 120px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-family: arial;
+    float: left;
+}
+
+label {
+    color: white;
+}
+
+table {
+    border-style: inset;
+    width: 800px;
+    color: white;
+    background-color: #A9A9A9;
+    border-width: thick;
+    border-color: #909090;
+}
+
+th{
+    text-align: left;
+    font-style: italic;
+}
+
+h2 {
+    font-family: arial;
+    font-size: 15px;
+    color: white;
+}
+
+::placeholder { 
+    color: black;
+    font-family: arial;
+}
+
+h1 {
+    font-size: 16px;
+    font-family: arial;
+    color: white;
+    
+}
+
+tr {
+    font-family: arial;
+}
+
+td {
+    font-size: 14px;
+}
+
+body {
+    background-color: gray;
+    background-image: url("stardust.png");
+}
