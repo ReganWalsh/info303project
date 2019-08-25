@@ -35,4 +35,4 @@ When a sale is made on the Vend web interface, an E-Mail containing a JSON encod
 * Creating Routes In Camel
 * Parsing Data From A Payload (Email) and use it to Process The Data
 
-_**Please ignore excessive comments within this Project. As I am learning I read each line of code trying to understand how it works in relation to the overall project structure. I find commenting most lines of code a learning experience and helps improve my overall understanding of the project.**_
+_**Please ignore excessive comments within this Project. I use them as a way to learn when implementing a new project, as I find it improves my retention of programming language concepts and language syntax when they are used .**_ 🖖🏻
