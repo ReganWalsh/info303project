@@ -9,7 +9,9 @@
 ![forthebadge](https://img.shields.io/badge/uses-Apache%20Camel-blue.svg?style=for-the-badge)
 
 # *INFO303 Semester Project*
-This project was created during a semester for my Enterprise Information Systems Infrastructure paper (INFO303) it uses various technologies such as Java RMI, Jooby, REST web services, AJAX and Apache Camel. This application was created to mimic the Customer to Company relationship when purchasing an item online. This application integrates to an external API (Vend) which allows the ability to create a sale from a customers details. **_Note: This application is just as a reference as access to my student e-mail and Vend API have been retracted._**
+This project was created during a semester for my Enterprise Information Systems Infrastructure paper in 2018. This application was created to mimic the customer to company relationship when purchasing an item online, and is integrated with an external point of sale API (Vend). Accounts are able to be created in front-end written in HTML and CSS (Integrated with JavaScript) with the details posted to a customer web service application written in Java and then also posted to the Vend API. Sales are created within the Vend user interface to mimic a sale being created by a company based on the customers details. An Apache Camel router then picks up the details from a payload and then processes the sale on a sale web service written in Java.
+<br>
+**_Note: This application is just as a reference as access to my student e-mail and Vend API have been retracted._**
 <br>
 <br>
 The main functionality of this program allows a **customer to create an account** and also provides the ability for an **external API to create a sale based upon a customers details**.
