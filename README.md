@@ -9,18 +9,18 @@
 ![forthebadge](https://img.shields.io/badge/uses-Apache%20Camel-blue.svg?style=for-the-badge)
 
 # *INFO303 Semester Project*
-This project was created during a semester for my Enterprise Information Systems Infrastructure paper (INFO303) it uses various technologies such as Java RMI, Jooby, REST web services, AJAX and Apache Camel. Together they integrate with an external API (Vend) which allows a customer to create an account and a sale to be processed for a makeshift company. **_Note: This application is just as a reference as access to student e-mail and Vend API have been retracted._**
+This project was created during a semester for my Enterprise Information Systems Infrastructure paper (INFO303) it uses various technologies such as Java RMI, Jooby, REST web services, AJAX and Apache Camel. This application was created to mimic the Customer to Company relationship when purchasing an item online. This application integrates to an external API (Vend) which allows the ability to create a sale from a customers details. **_Note: This application is just as a reference as access to my student e-mail and Vend API have been retracted._**
 <br>
 <br>
-The main functionality of this program allows a **customer to create an account** and also provides the ability for a **sale to be processed**.
+The main functionality of this program allows a **customer to create an account** and also provides the ability for an **external API to create a sale based upon a customers details**.
 <br>
 <br>
 **Customer Creates Account** -
 A Customer is able to create a customer account via the AJAX client. The Camel router then POSTs the customer account to a customer account REST web service and also creates the equivalent account on Vend.<br>
 The Camel router works by providing a Jetty endpoint to receive the account details from the AJAX client. This also handles Cross Origin Resource Sharing.
 <br>
-**Customer Creates A Sale** -
-When a sale is made on the Vend web interface, an E-Mail containing a JSON encoded version of the sale details is sent to the student E-Mail account (via a webhook service). This payload is then picked up by the Camel router and is then used to create a sale on the sales REST web service. The JSON payload is then parsed into Java Objects that are able to be used by the sales service, this is accomplished by using the sales service domain model. The sales summary is then retrieved from the sales REST web service then used to calculate the customers 'customer group' based on the summarys of all of the customers sales. Then if changed will update on Vend and the customer accounts web service.<br>
+**External API Creates A Sale** -
+When a sale is made on the Vend API interface, an E-Mail containing a JSON encoded version of the sale details is sent to my student E-Mail account (via a webhook service). This payload is then picked up by the Camel router and is then used to create a sale on the sales REST web service. The JSON payload is then parsed into Java Objects that are able to be used by the sales service, this is accomplished by using the sales service domain model. The sales summary is then retrieved from the sales REST web service then used to calculate the customers 'customer group' based on the summarys of all of the customers sales. Then if changed will update on Vend and the customer accounts web service.<br>
 
 **This project is split into 5 gradle subprojects each with its own functionality, they contain:**<br>
 * **common** Contains all the domain classes that are needed for all of projects, including all of the Customer and Sale domain classes.<br>
@@ -30,7 +30,7 @@ When a sale is made on the Vend web interface, an E-Mail containing a JSON encod
 * **router** - An Apache Camel router project that contains a class that contains a single method that creates a customer and two replicating builders that create the queues that are used to encapsulate different operations. One is used for 'Customer Creates Account' operation and one is used for the 'Customer Makes A Sale' operation, and also contains the physical router class that allows the replicating builders to create the router.
 
 ## *What I Learned:*
-* Implementing RESTful Web Services With Jooby
+* Implementing RESTful Web Services
 * Implementing A 'Create Customer' Web Interface Using AJAX, HTML and CSS 
 * Creating Routes In Camel
 * Parsing Data From A Payload (Email) and use it to Process The Data
