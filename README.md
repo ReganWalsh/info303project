@@ -9,10 +9,10 @@
 ![forthebadge](https://img.shields.io/badge/uses-Apache%20Camel-blue.svg?style=for-the-badge)
 
 # *INFO303 Semester Project*
-This project was created during a semester for my Enterprise Information Systems Infrastructure paper (INFO303) it uses various technologies such as Java RMI, Jooby, REST web services, AJAX and Apache Camel. Together they integrate with an external API (Vend) which allows a customer to create an account and a sale for a makeshift company. **_Note: This application is just as a reference as access to student e-mail and Vend API have been retracted._**
+This project was created during a semester for my Enterprise Information Systems Infrastructure paper (INFO303) it uses various technologies such as Java RMI, Jooby, REST web services, AJAX and Apache Camel. Together they integrate with an external API (Vend) which allows a customer to create an account and a sale to be processed for a makeshift company. **_Note: This application is just as a reference as access to student e-mail and Vend API have been retracted._**
 <br>
 <br>
-The main functionality of this program allows a **customer to create an account** and also provides the ability for a **customer to create a sale**.
+The main functionality of this program allows a **customer to create an account** and also provides the ability for a **sale to be processed**.
 <br>
 <br>
 **Customer Creates Account** -
