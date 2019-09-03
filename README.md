@@ -3,7 +3,6 @@
 ![forthebadge](https://img.shields.io/badge/made%20with-HTML5-red.svg?style=for-the-badge&logo=HTML5&logoColor=white)
 ![forthebadge](https://img.shields.io/badge/made%20with-CSS3-red.svg?style=for-the-badge&logo=CSS3&logoColor=white)
 ![forthebadge](https://img.shields.io/badge/uses-Java%20RMI-blue.svg?style=for-the-badge)
-![forthebadge](https://img.shields.io/badge/uses-AJAX-blue.svg?style=for-the-badge)
 ![forthebadge](https://img.shields.io/badge/uses-Apache%20Camel-blue.svg?style=for-the-badge)
 
 # *INFO303 Semester Project*
