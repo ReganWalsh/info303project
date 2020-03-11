@@ -1,9 +1,7 @@
-![forthebadge](https://img.shields.io/badge/made%20with-java-red.svg?style=for-the-badge&logo=Java&logoColor=white)
-![forthebadge](https://img.shields.io/badge/made%20with-javascript-red.svg?style=for-the-badge&logo=JavaScript&logoColor=white)
-![forthebadge](https://img.shields.io/badge/made%20with-HTML5-red.svg?style=for-the-badge&logo=HTML5&logoColor=white)
-![forthebadge](https://img.shields.io/badge/made%20with-CSS3-red.svg?style=for-the-badge&logo=CSS3&logoColor=white)<br>
-![forthebadge](https://img.shields.io/badge/uses-Java%20RMI-blue.svg?style=for-the-badge)
-![forthebadge](https://img.shields.io/badge/uses-Apache%20Camel-blue.svg?style=for-the-badge)
+![forthebadge](https://img.shields.io/badge/made%20with-java-007396.svg?style=for-the-badge&logo=Java&logoColor=white)
+![forthebadge](https://img.shields.io/badge/made%20with-javascript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=white)
+![forthebadge](https://img.shields.io/badge/made%20with-HTML5-E34F26.svg?style=for-the-badge&logo=HTML5&logoColor=white)
+![forthebadge](https://img.shields.io/badge/made%20with-CSS3-1572B6.svg?style=for-the-badge&logo=CSS3&logoColor=white)<br>
 
 # *INFO303 Semester Project*
 This project was created during a semester for my Enterprise Information Systems Infrastructure paper in 2018. This application was created to mimic the customer to company relationship when purchasing an item online, and is integrated with an external point of sale API (Vend). Accounts are able to be created in front-end written in HTML and CSS with the details posted to a customer web service application written in Java and then also posted to the Vend API. Sales are created within the Vend user interface to mimic a sale being created by a company based on the customers details. An Apache Camel router then picks up the details from a payload and then processes the sale on a sale web service written in Java.
